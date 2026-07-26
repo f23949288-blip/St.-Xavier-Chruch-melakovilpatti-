@@ -146,3 +146,24 @@ gsap.utils.toArray(".gallery-card").forEach((card)=>{
     });
 
 });
+
+const particles = document.getElementById("particles");
+
+for(let i=0;i<80;i++){
+
+    const p=document.createElement("div");
+
+    p.className="particle";
+
+    p.style.left=Math.random()*100+"%";
+
+    p.style.animationDuration=(5+Math.random()*8)+"s";
+
+    p.style.animationDelay=Math.random()*5+"s";
+
+    p.style.width=(3+Math.random()*5)+"px";
+    p.style.height=p.style.width;
+
+    particles.appendChild(p);
+
+}
