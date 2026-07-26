@@ -300,3 +300,39 @@ transform:translateX(-50%) scale(1.15);
 }
 
 }
+.church-logo{
+    width:180px;
+    margin-bottom:30px;
+    border-radius:50%;
+    animation:logoFloat 4s ease-in-out infinite;
+    filter:drop-shadow(0 0 30px gold);
+    transition:.5s;
+}
+
+.church-logo:hover{
+    transform:rotateY(20deg) scale(1.1);
+}
+
+@keyframes logoFloat{
+
+0%{transform:translateY(0);}
+50%{transform:translateY(-15px);}
+100%{transform:translateY(0);}
+
+}
+
+.btn{
+display:inline-block;
+padding:15px 45px;
+background:gold;
+color:black;
+font-weight:bold;
+text-decoration:none;
+border-radius:50px;
+transition:.4s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+box-shadow:0 0 40px gold;
+}
