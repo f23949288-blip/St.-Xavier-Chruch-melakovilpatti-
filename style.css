@@ -203,3 +203,35 @@ font-size:18px;
 color:white;
 
 }
+/* Floating Animation */
+
+.hero-content{
+    animation: floatHero 5s ease-in-out infinite;
+}
+
+@keyframes floatHero{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-20px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+/* Gold Glow */
+
+.hero h1{
+
+text-shadow:
+0 0 20px #FFD700,
+0 0 40px #FFD700,
+0 0 80px #FFD700;
+
+}
