@@ -271,3 +271,32 @@ transform:scale(1);
 }
 
 }
+
+.hero::before{
+content:"";
+position:absolute;
+width:700px;
+height:700px;
+background:radial-gradient(circle,
+rgba(255,215,0,.45),
+transparent 70%);
+top:-220px;
+left:50%;
+transform:translateX(-50%);
+filter:blur(70px);
+animation:lightPulse 5s infinite;
+}
+
+@keyframes lightPulse{
+
+0%,100%{
+opacity:.6;
+transform:translateX(-50%) scale(1);
+}
+
+50%{
+opacity:1;
+transform:translateX(-50%) scale(1.15);
+}
+
+}
