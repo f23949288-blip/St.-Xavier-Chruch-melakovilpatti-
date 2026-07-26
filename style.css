@@ -415,3 +415,7 @@ box-shadow:0 0 60px gold;
 transform:scale(1.15);
 
 }
+
+html{
+    scroll-behavior:smooth;
+}
