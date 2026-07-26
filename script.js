@@ -84,3 +84,24 @@ camera.updateProjectionMatrix();
 renderer.setSize(window.innerWidth,window.innerHeight);
 
 });
+
+// Mouse 3D Effect
+
+const hero = document.querySelector(".hero");
+
+hero.addEventListener("mousemove",(e)=>{
+
+const x=(window.innerWidth/2-e.pageX)/35;
+
+const y=(window.innerHeight/2-e.pageY)/35;
+
+hero.style.transform=
+`rotateY(${x}deg) rotateX(${-y}deg)`;
+
+});
+
+hero.addEventListener("mouseleave",()=>{
+
+hero.style.transform="rotateX(0) rotateY(0)";
+
+});
