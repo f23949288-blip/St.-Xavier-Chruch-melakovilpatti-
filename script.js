@@ -122,3 +122,27 @@ navbar.style.background="rgba(255,255,255,.08)";
 }
 
 });
+gsap.registerPlugin(ScrollTrigger);
+
+// Hero animation
+gsap.from(".hero-content",{
+    opacity:0,
+    y:100,
+    duration:1.5
+});
+
+// Gallery cards animation
+gsap.utils.toArray(".gallery-card").forEach((card)=>{
+
+    gsap.from(card,{
+        scrollTrigger:{
+            trigger:card,
+            start:"top 85%"
+        },
+        opacity:0,
+        y:80,
+        scale:0.8,
+        duration:1
+    });
+
+});
