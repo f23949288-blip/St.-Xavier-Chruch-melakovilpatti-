@@ -105,3 +105,20 @@ hero.addEventListener("mouseleave",()=>{
 hero.style.transform="rotateX(0) rotateY(0)";
 
 });
+
+window.addEventListener("scroll",()=>{
+
+const navbar=document.querySelector(".navbar");
+
+if(window.scrollY>50){
+
+navbar.style.background="rgba(0,0,0,.7)";
+navbar.style.backdropFilter="blur(20px)";
+
+}else{
+
+navbar.style.background="rgba(255,255,255,.08)";
+
+}
+
+});
