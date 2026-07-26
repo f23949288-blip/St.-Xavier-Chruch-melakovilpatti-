@@ -419,3 +419,39 @@ transform:scale(1.15);
 html{
     scroll-behavior:smooth;
 }
+#particles{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    z-index:-1;
+    pointer-events:none;
+}
+
+.particle{
+    position:absolute;
+    width:6px;
+    height:6px;
+    background:gold;
+    border-radius:50%;
+    box-shadow:0 0 15px gold;
+    animation:floatUp linear infinite;
+}
+
+@keyframes floatUp{
+    0%{
+        transform:translateY(100vh);
+        opacity:0;
+    }
+
+    20%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-120vh);
+        opacity:0;
+    }
+}
